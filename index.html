@@ -98,6 +98,22 @@
             .popylariti {
                 grid-template-columns: 1fr; /* Одна карточка в ряд на маленьких экранах */
             }
+            nav a {
+            color: white;
+            margin: 0 5px;
+            font-size: 13px;
+            text-decoration: none;
+            position: relative;
+        }
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: white;
+            bottom: -5px;
+            left: 0;
+        }
         }
     </style>
 </head>
