@@ -70,6 +70,27 @@
             background-color: #a4004f; /* Более темный цвет при наведении */
             transform: scale(1.05); /* Увеличение размера кнопки */
         }
+        @media screen {
+        nav a {
+            color: white;
+            margin: 0 5px;
+            font-size: 13px;
+            text-decoration: none;
+            position: relative;
+        }
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: white;
+            bottom: -5px;
+            left: 0;
+        }
+        .container {
+            margin: 10px;
+        }
+        }
     </style>
 </head>
 <body>
