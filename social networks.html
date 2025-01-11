@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Красиво о важном</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Подключение Font Awesome -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif; /* Применение шрифта Montserrat */
+            margin: 0;
+            background: linear-gradient(90deg, #f9e8f4, #e8c6e8);
+            color: #333;
+        }
+        header {
+            background-color: #d5006d; /* Розовый */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            position: relative;
+        }
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: white;
+            bottom: -5px;
+            left: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px; /* Ограничение максимальной ширины */
+            border-radius: 30px;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto; /* Отступ сверху и снизу */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+        }
+        h1 {
+            font-size: 24px; /* Размер заголовка */
+        }
+        p {
+            line-height: 1.6; /* Интерлиньяж для абзацев */
+        }
+        ul {
+            list-style-type: disc; /* Стилизация списка */
+            padding-left: 20px; /* Отступ для списка */
+        }
+        .button {
+            display: inline-block; /* Для корректного отображения */
+            width: 200px;
+            height: 40px;
+            background-color: #d5006d;
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            font-size: 12pt;
+            text-align: center; /* Центрирование текста */
+            line-height: 40px; /* Вертикальное центрирование текста */
+            text-decoration: none; /* Убираем подчеркивание */
+            transition: background-color 0.3s, transform 0.2s; /* Анимация при наведении */
+        }
+        .button:hover {
+            background-color: #a4004f; /* Более темный цвет при наведении */
+            transform: scale(1.05); /* Увеличение размера кнопки */
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Отступ между кнопками */
+            margin-top: 20px; /* Отступ сверху */
+        }
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: #d5006d;
+            border-radius: 50%;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s; /* Анимация при наведении */
+        }
+        .social-button:hover {
+            background-color: #a4004f; /* Более темный цвет при наведении */
+            transform: scale(1.1); /* Увеличение размера кнопки */
+        }
+        .social-button i {
+            font-size: 24px; /* Размер иконки */
+        }
+        @media screen{
+        nav a {
+            color: white;
+            margin: 0 5px;
+            font-size: 13px;
+            text-decoration: none;
+            position: relative;
+        }
+        nav a:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: white;
+            bottom: -5px;
+            left: 0;
+        }
+        .container {
+            margin: 10px auto 0;
+            width: 84%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Красиво о<br>важном</h1>
+        <nav>
+            <a href="onas.html">О нас</a>
+            <a href="social networks.html">Социальные сети</a>
+            <a href="gallery.html">Галерея</a>
+        </nav>
+    </header>
+    <div class="container" id="social">
+        <h1 style="text-align: center;">Социальные сети</h1>
+        <p style="text-align: center;">Следите за нами в социальных сетях:</p>
+        <div class="social-buttons">
+            <a class="social-button" href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i> <!-- Иконка Instagram -->
+            </a>
+            <a class="social-button" href="https://t.me/christianwl" target="_blank">
+                <i class="fab fa-telegram-plane"></i> <!-- Иконка Telegram -->
+            </a>
+            <a class="social-button" href="index.html" target="_blank">
+                <i class="fas fa-globe"></i> <!-- Иконка планеты для сайта -->
+            </a>
+        </div>
+        <center><a class="button" href="index.html">Приступить</a></center>
+    </div>
+</body>
+</html>
