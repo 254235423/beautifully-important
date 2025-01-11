@@ -61,6 +61,30 @@
         .prev:hover, .next:hover {
             background-color: rgba(0,0,0,0.8);
         }
+        .container {
+            width: 90%;
+            margin: 10px auto 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .popylariti {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Две карточки в ряд */
+            gap: 20px; /* Отступ между карточками */
+            padding: 10px; /* Отступ внутри контейнера карточек */
+        }
+        .card {
+            background-color: #f0f0f0; /* Цвет фона карточки */
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Тень для карточки */
+        }
+        .card img {
+            width: 100%; /* Ширина изображения в карточке */
+            border-radius: 10px;
+        }
         @media screen {
         body {
             font-family: 'Montserrat', sans-serif; /* Применение шрифта Poppins */
@@ -77,7 +101,7 @@
         nav a {
             color: white;
             margin: 0 5px;
-            font-size: 14px;
+            font-size: 13px;
             text-decoration: none;
             position: relative;
         }
@@ -130,6 +154,24 @@
             <a href="gallery.html">Галерея</a>
         </nav>
     </header>
-    
+    <div class="container">
+        <div class="popylariti">
+            <div class="card">
+                <img src="1.jpg" alt="Изображение 1">
+                <p>Описание 1</p>
+            </div>
+            <div class="card">
+                <img src="2.jpg" alt="Изображение 2">
+                <p>Описание 2</p>
+            </div>
+            <div class="card">
+                <img src="3.jpg" alt="Изображение 3">
+                <p>Описание 3</p>
+            </div>
+            <div class="card">
+                <img src="4.jpg" alt="Изображение 4">
+                <p>Описание 4</p>
+            </div>
+        </div>
 </body>
 </html>
